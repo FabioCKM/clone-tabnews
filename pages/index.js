@@ -3,8 +3,3 @@ function Home(){
 }
 export default Home;
 
-let botao = document.getElementById("btn");
-
-botao.addEventListener("click",()=>{
-    botao.innerText = "Boa Tarde";
-});
