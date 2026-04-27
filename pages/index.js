@@ -1,5 +1,15 @@
+import { useState } from "react";
+
 function Home(){
-    return <h1 id="btn">Larissa clique em mim</h1>
+    const [texto, textoClick] = useState("Larissa clique em mim");
+
+    function tratarTexto(){
+        setTexto("67");
+        setTexto.current.style.color = "red";
+    }
+    return(
+        <h1 onClick={setTexto}>{texto}</h1>
+    ); 
+
 }
 export default Home;
-
